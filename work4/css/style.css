@@ -1,0 +1,255 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+}
+section {
+    padding: 60px 0;
+}
+header {
+    background: #f7f7f7;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.header-nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.header-nav>a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+.header-nav>a:hover{
+    color: cadetblue;
+}
+.header-nav>a::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 30px;
+    background-color: cornflowerblue;
+    height: 2px;
+    width: 0;
+}
+.header-nav>a:hover::after {
+    width: 50%;
+    transition: 0.5s all;
+}
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 900px;
+    display: flex;
+}
+#about {
+    margin:0;
+    background: linear-gradient(45deg, #3111dd, #cd3edb);
+}
+
+#about img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #cd3edb;
+    margin: 10px 0 30px;
+}
+.about-card {
+    background-color: white;
+    width: 33%;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+#about h4{
+    font-size: 22px;
+    margin: 20px 0;
+}
+#about ul {
+    margin: 20px 0;
+    list-style-type: none;
+}
+#about li{
+    line-height: 1.5;
+    list-style-type: none;
+}
+#about li::before{
+    content: '\1F596';
+}
+.about-card:hover{
+    transform: scale(0.6);
+}
+
+/* Portfolio */
+
+#porfolio {
+    background-color: #f7f7f7;
+}
+#porfolio h2, #porfolio p {
+    text-align: center;
+}
+.portfolio-card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+
+}
+.portfolio-card > h3 {
+    text-align: center;
+}
+.portfolio-card:hover {
+    box-shadow: 9px 8px 10px 3px rgb(0 0 0 / 15%);
+    transform: scale(1.1);
+}
+.portfolio-card>img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/* Services */
+#services {
+    background-color: #f7f7f7;
+}
+.services-card {
+    width: 33%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.services-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solidrgb(0, 60, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-card:hover .services-icon {
+    border: 2px solid #fff;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s all;
+}
+.services-icon>i {
+    font-size: 45px;
+    color: rgb(0, 60, 255);
+}
+.services-card:hover .services-icon>i {
+    color: #fff;
+    transition: 0.5s all;
+}
+
+.services-card h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.services-card p {
+    text-align: center;
+    font-style: italic;
+    color: rgb(22, 21, 21);
+}
+.services-card::after {
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 60, 255);
+    width: 100px;
+    height: 3px;
+}
+.services-card:hover::after {
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s all;
+}
+
+/* Action */
+
+#action {
+    background: url('../img/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.action-box {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(3, 2, 2, 0.507);
+    color: white;
+}
+
+
+
+/* hero */
+
+
+#hero{
+    background: url(../img/2.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+
+.hero-content{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    width: 400px;
+    height: 100%;
+    padding: 0 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 100px;
+}
+
+.hero-content p{
+    margin-bottom: 130px;
+    position: relative;
+}
+
+.hero-content p::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 120px;
+    height: 6px; 
+    top: -20px;
+}
+
+
